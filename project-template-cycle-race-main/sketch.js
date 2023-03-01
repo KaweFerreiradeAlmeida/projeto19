@@ -138,18 +138,20 @@ function draw() {
     redCG.setVelocityXEach(0);
     redCG.setLifetimeEach(-1);
 
-    //escreva uma condição para chamar a função reset()
+    if (keyDown("UP_ARROW")){//escreva uma condição para chamar a função reset()
   reset()
 
 }
-
+}
 }
 function reset(){
   gameState=PLAY;
 gameOver.visible=false
-mainCyclist.addAnimation("mainPlayer1.png","mainPlayer2.png");
+mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
 pinkCG.destroyEach();
-distace = 0;
+yellowCG.destroyEach();
+redCG.destroyEach();
+distance = 0;
 
 
 }
